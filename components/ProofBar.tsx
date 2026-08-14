@@ -1,23 +1,27 @@
 const stats = [
   {
-    value: "330K",
-    label: "Customers acquired",
+    company: "At iD Mobile (Currys)",
+    value: "330,000",
+    label: "Customers acquired in year one",
     detail: "169% of target",
   },
   {
+    company: "At Bally’s Interactive",
     value: "€1.2M",
     label: "Monthly revenue",
     detail: "Built from zero in five months",
   },
   {
+    company: "At Premier Inn",
     value: "£8.5M",
     label: "Media budget managed",
-    detail: "13% lower CPM",
+    detail: "13% CPM reduction",
   },
   {
+    company: "At Bally’s Interactive",
     value: "110%",
     label: "Revenue target achieved",
-    detail: "Sportsbook launch",
+    detail: "Sportsbook launch, UK and Spain",
   },
 ];
 
@@ -27,8 +31,11 @@ export default function ProofBar() {
       <div className="mx-auto max-w-content px-6 py-14 lg:px-8">
         <div className="grid grid-cols-2 gap-x-8 gap-y-10 lg:grid-cols-4">
           {stats.map((stat) => (
-            <div key={stat.label}>
-              <p className="font-display text-4xl font-extrabold tracking-tight text-teal sm:text-5xl">
+            <div key={stat.company + stat.value}>
+              <p className="font-display text-xs font-semibold uppercase tracking-[0.14em] text-ink/50">
+                {stat.company}
+              </p>
+              <p className="mt-2 font-display text-4xl font-extrabold tracking-tight text-teal sm:text-5xl">
                 {stat.value}
               </p>
               <p className="mt-2 text-sm font-semibold leading-snug text-ink">
