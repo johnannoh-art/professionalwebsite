@@ -23,19 +23,19 @@ export default function About() {
               want, building a clear strategy around it and bringing Product,
               CRM, Performance and CX together to deliver it.
             </p>
-            <p className="text-base text-ink/60">
+            <p>
               I started out in agency account management (VCCP, BD Network,
               Mullen Lowe) before moving in-house. Currently working
               fractionally with{" "}
-              <span className="font-semibold text-ink/80">
+              <span className="font-semibold text-ink">
                 The Great Friendship Project
               </span>
               ,{" "}
-              <span className="font-semibold text-ink/80">
+              <span className="font-semibold text-ink">
                 ArrowTown Drinks
               </span>{" "}
               and{" "}
-              <span className="font-semibold text-ink/80">
+              <span className="font-semibold text-ink">
                 Grae Matta Foundation
               </span>
               , while looking for my next Head of Brand or Head of Marketing
