@@ -9,15 +9,16 @@ export default function Hero() {
             Head of Brand &amp; Marketing · London
           </p>
           <h1 className="mt-5 font-display text-4xl font-extrabold leading-[1.08] tracking-tight text-ink sm:text-5xl lg:text-[3.25rem]">
-            I build{" "}
+            I create{" "}
             <span className="underline-gold">customer-led brands</span> that
             drive commercial growth.
           </h1>
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-ink/75">
             Brand and marketing leader with a track record of launching,
-            repositioning and scaling B2C brands. From doubling awareness and
-            beating customer acquisition targets by 69% at iD Mobile to
-            building Japan&rsquo;s fastest-growing online gaming brand.
+            repositioning and scaling B2C brands. From launching Currys&rsquo;
+            own challenger telecoms brand, iD Mobile, doubling awareness and
+            increasing D2C sales contribution from 3% to 30%, to building
+            Japan&rsquo;s fastest-growing online gaming brand.
           </p>
           <div className="mt-9 flex flex-wrap items-center gap-4">
             <a
