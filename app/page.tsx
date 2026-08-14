@@ -1,5 +1,6 @@
 import Hero from "@/components/Hero";
 import ProofBar from "@/components/ProofBar";
+import WhatIBring from "@/components/WhatIBring";
 import HowIWork from "@/components/HowIWork";
 import About from "@/components/About";
 import CaseStudies from "@/components/CaseStudies";
@@ -13,6 +14,7 @@ export default function Home() {
     <main>
       <Hero />
       <ProofBar />
+      <WhatIBring />
       <HowIWork />
       <About />
       <CaseStudies />

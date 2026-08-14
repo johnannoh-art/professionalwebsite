@@ -10,11 +10,6 @@ const testimonials = [
     name: "Direct Report",
   },
   {
-    quote:
-      "John goes above and beyond to deliver results, and the resounding success of projects under his stewardship are a testament to his hard work and keen eye for detail.",
-    name: "Studio Manager",
-  },
-  {
     quote: "John is not just a leader, he is a driving force for collaboration.",
     name: "Senior Designer",
   },
@@ -27,7 +22,7 @@ export default function Testimonials() {
         <h2 className="font-display text-3xl font-extrabold tracking-tight text-ink sm:text-4xl">
           What people say
         </h2>
-        <div className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2">
+        <div className="mt-14 grid grid-cols-1 gap-6 lg:grid-cols-3">
           {testimonials.map((testimonial) => (
             <div
               key={testimonial.name}

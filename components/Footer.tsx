@@ -11,7 +11,7 @@ export default function Footer() {
             John Annoh
           </p>
           <p className="mt-1 text-sm text-ink/60">
-            Brand &amp; marketing leadership for challenger and D2C brands.
+            Brand &amp; marketing leadership for B2C and challenger brands.
           </p>
         </div>
         <div className="flex items-center gap-6 text-sm">

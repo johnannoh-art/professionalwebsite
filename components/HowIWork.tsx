@@ -2,20 +2,25 @@ const steps = [
   {
     number: "01",
     title: "Find the truth",
-    description:
-      "Get to the real customer insight and the commercial problem that actually needs solving.",
+    description: "Understand the customer, the market and the commercial problem.",
   },
   {
     number: "02",
     title: "Build the strategy",
     description:
-      "Shape a brand position the business can own and commit to.",
+      "Turn insight into a clear proposition, brand strategy and plan for growth.",
   },
   {
     number: "03",
-    title: "Align the teams",
+    title: "Mobilise the business",
     description:
-      "Bring product, CRM, performance and CX together so the strategy actually ships.",
+      "Bring Brand, Product, CRM, Performance and CX together around a shared customer goal.",
+  },
+  {
+    number: "04",
+    title: "Prove the impact",
+    description:
+      "Connect marketing activity to acquisition, revenue, retention and long-term brand growth.",
   },
 ];
 
@@ -25,7 +30,7 @@ export default function HowIWork() {
       <h2 className="font-display text-3xl font-extrabold tracking-tight text-ink sm:text-4xl">
         How I work
       </h2>
-      <div className="mt-14 grid grid-cols-1 gap-12 sm:grid-cols-3 sm:gap-8">
+      <div className="mt-14 grid grid-cols-1 gap-12 sm:grid-cols-2 sm:gap-x-8 sm:gap-y-14 lg:grid-cols-4">
         {steps.map((step) => (
           <div key={step.number} className="relative pl-2">
             <span className="font-display text-sm font-bold text-gold">

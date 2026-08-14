@@ -9,27 +9,28 @@ export default function Hero() {
             Head of Brand &amp; Marketing · London
           </p>
           <h1 className="mt-5 font-display text-4xl font-extrabold leading-[1.08] tracking-tight text-ink sm:text-5xl lg:text-[3.25rem]">
-            I join the dots between what customers need, what a brand{" "}
-            <span className="underline-gold">stands for</span>, and what the
-            business needs to grow.
+            I build{" "}
+            <span className="underline-gold">customer-led brands</span> that
+            drive commercial growth.
           </h1>
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-ink/75">
-            Brand and marketing leadership for challenger and D2C brands —
-            from doubling brand awareness at a UK telecoms challenger to
+            Brand and marketing leader with a track record of launching,
+            repositioning and scaling B2C brands. From doubling awareness and
+            beating customer acquisition targets by 69% at iD Mobile to
             building Japan&rsquo;s fastest-growing online gaming brand.
           </p>
           <div className="mt-9 flex flex-wrap items-center gap-4">
             <a
-              href="#contact"
+              href="#case-studies"
               className="rounded-full bg-teal px-7 py-3.5 font-display text-sm font-semibold text-cream shadow-sm transition hover:bg-teal-dark"
             >
-              Get in touch
+              See my work
             </a>
             <a
-              href="#case-studies"
+              href="#contact"
               className="rounded-full border border-ink/15 px-7 py-3.5 font-display text-sm font-semibold text-ink transition hover:border-ink/30"
             >
-              See the work
+              Get in touch
             </a>
           </div>
         </div>

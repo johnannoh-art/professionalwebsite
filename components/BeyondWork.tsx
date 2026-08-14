@@ -21,7 +21,7 @@ export default function BeyondWork() {
   return (
     <section className="mx-auto max-w-content px-6 py-24 lg:px-8">
       <h2 className="font-display text-3xl font-extrabold tracking-tight text-ink sm:text-4xl">
-        Beyond the day job
+        More than marketing
       </h2>
       <div className="mt-14 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
         {items.map((item) => (

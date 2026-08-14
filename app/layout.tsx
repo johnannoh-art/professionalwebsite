@@ -19,7 +19,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "John Annoh — Head of Brand & Marketing",
   description:
-    "Brand and marketing leadership for challenger and D2C brands — John Annoh, Head of Brand & Marketing, London.",
+    "Brand and marketing leadership for B2C and challenger brands. John Annoh, Head of Brand & Marketing, London.",
 };
 
 export default function RootLayout({

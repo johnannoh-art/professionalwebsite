@@ -3,6 +3,7 @@
 import { useState } from "react";
 
 type CaseStudy = {
+  category: string;
   title: string;
   company: string;
   role: string;
@@ -14,7 +15,8 @@ type CaseStudy = {
 
 const caseStudies: CaseStudy[] = [
   {
-    title: "Creating Japan’s fastest-growing casino brand",
+    category: "Build",
+    title: "Creating Japan’s fastest-growing online gaming brand",
     company: "Bally’s Interactive",
     role: "Head of Brand",
     dates: "June 2019 – Dec 2023",
@@ -27,7 +29,8 @@ const caseStudies: CaseStudy[] = [
     ],
   },
   {
-    title: "Launching Sportsbook across UK & Spain",
+    category: "Launch",
+    title: "Taking Sportsbook to market across the UK & Spain",
     company: "Bally’s Interactive",
     role: "Head of Marketing",
     dates: "Jan – Nov 2024",
@@ -40,7 +43,8 @@ const caseStudies: CaseStudy[] = [
     ],
   },
   {
-    title: "iD Mobile — disrupting the UK mobile market",
+    category: "Grow",
+    title: "Helping iD Mobile disrupt the UK mobile market",
     company: "Currys",
     role: "Brand Marketing Manager",
     dates: "Dec 2015 – Apr 2018",
@@ -74,7 +78,10 @@ export default function CaseStudies() {
               aria-expanded={isOpen}
               className="flex flex-col rounded-2xl border border-ink/10 bg-white p-7 text-left shadow-sm transition hover:border-teal/40 hover:shadow-md"
             >
-              <p className="font-display text-xs font-semibold uppercase tracking-[0.14em] text-teal">
+              <span className="inline-flex w-fit items-center rounded-full bg-gold/15 px-2.5 py-1 font-display text-[0.65rem] font-bold uppercase tracking-[0.14em] text-ink">
+                {study.category}
+              </span>
+              <p className="mt-3 font-display text-xs font-semibold uppercase tracking-[0.14em] text-teal">
                 {study.company} · {study.role}
               </p>
               <p className="mt-1 text-xs text-ink/50">{study.dates}</p>

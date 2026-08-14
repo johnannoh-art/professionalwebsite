@@ -1,19 +1,23 @@
 const stats = [
   {
-    value: "330,000",
-    label: "customers acquired in year one, vs. a 195,000 target (iD Mobile)",
+    value: "330K",
+    label: "Customers acquired",
+    detail: "169% of target",
   },
   {
     value: "€1.2M",
-    label: "monthly revenue built from zero in 5 months (Bally’s, Japan)",
+    label: "Monthly revenue",
+    detail: "Built from zero in five months",
   },
   {
     value: "£8.5M",
-    label: "media budget managed, 13% CPM reduction (Premier Inn)",
+    label: "Media budget managed",
+    detail: "13% lower CPM",
   },
   {
     value: "110%",
-    label: "of revenue target — Sportsbook launch, UK & Spain (Bally’s)",
+    label: "Revenue target achieved",
+    detail: "Sportsbook launch",
   },
 ];
 
@@ -27,8 +31,11 @@ export default function ProofBar() {
               <p className="font-display text-4xl font-extrabold tracking-tight text-teal sm:text-5xl">
                 {stat.value}
               </p>
-              <p className="mt-2 text-sm leading-snug text-ink/70">
+              <p className="mt-2 text-sm font-semibold leading-snug text-ink">
                 {stat.label}
+              </p>
+              <p className="mt-0.5 text-sm leading-snug text-ink/60">
+                {stat.detail}
               </p>
             </div>
           ))}

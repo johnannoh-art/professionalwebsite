@@ -4,33 +4,42 @@ export default function About() {
       <div className="mx-auto max-w-content px-6 py-24 lg:px-8">
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-[0.4fr_0.6fr] lg:gap-16">
           <h2 className="font-display text-3xl font-extrabold tracking-tight text-ink sm:text-4xl">
-            About
+            About me
           </h2>
           <div className="space-y-5 text-lg leading-relaxed text-ink/80">
             <p>
-              I&rsquo;m John — a brand and marketing leader who moved from
-              agency-side account management (VCCP, BD Network, Mullen Lowe)
-              into in-house brand leadership across telecoms, hospitality,
-              retail and iGaming. I&rsquo;ve led multi-million-pound budgets
-              and international teams, but I&rsquo;m probably best known for
-              bringing people together behind a shared customer vision and
-              turning brand strategy into measurable growth.
+              I&rsquo;m a B2C brand and marketing leader who enjoys turning
+              customer problems into commercial opportunities.
             </p>
             <p>
-              Currently working fractionally with{" "}
-              <span className="font-semibold text-ink">
+              I&rsquo;ve built and grown brands across telecoms, hospitality,
+              retail and gaming, from launching challenger brands and new
+              propositions to leading multi-market teams and
+              multi-million-pound budgets.
+            </p>
+            <p>
+              My sweet spot is where brand, customer and commercial strategy
+              meet. I like getting under the skin of what customers really
+              want, building a clear strategy around it and bringing Product,
+              CRM, Performance and CX together to deliver it.
+            </p>
+            <p className="text-base text-ink/60">
+              I started out in agency account management (VCCP, BD Network,
+              Mullen Lowe) before moving in-house. Currently working
+              fractionally with{" "}
+              <span className="font-semibold text-ink/80">
                 The Great Friendship Project
               </span>
               ,{" "}
-              <span className="font-semibold text-ink">
+              <span className="font-semibold text-ink/80">
                 ArrowTown Drinks
               </span>{" "}
               and{" "}
-              <span className="font-semibold text-ink">
+              <span className="font-semibold text-ink/80">
                 Grae Matta Foundation
               </span>
-              , while actively looking for my next Head of Brand or Head of
-              Marketing role.
+              , while looking for my next Head of Brand or Head of Marketing
+              role.
             </p>
           </div>
         </div>
