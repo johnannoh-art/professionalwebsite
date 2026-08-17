@@ -22,10 +22,12 @@ const caseStudies: CaseStudy[] = [
     dates: "June 2019 – Dec 2023",
     summary: "Built a new online gaming brand from scratch for the Japanese market.",
     detail:
-      "Built a new online gaming brand from scratch for the Japanese market, owning positioning, creative and go-to-market from a standing start.",
+      "Built a new online gaming brand from scratch for the Japanese market, owning customer insight, positioning, creative and go-to-market execution.",
     results: [
       "€1.2M monthly revenue and 50,000 active players by month five",
       "40% prompted brand awareness within 18 months",
+      "Increased consideration by 10pts, strengthening the ‘brand for me’ attribute",
+      "As the first brand hire, built and developed a high-performing team, increasing eNPS by 12% YoY",
     ],
   },
   {
@@ -36,10 +38,11 @@ const caseStudies: CaseStudy[] = [
     dates: "Jan – Nov 2024",
     summary: "Led go-to-market for a new product launch across six departments.",
     detail:
-      "Led go-to-market for a new product launch across six departments, aligning product, CRM, performance and CX behind a single commercial plan.",
+      "Led end-to-end go-to-market for a new product, shaping the proposition and activation plan while aligning product, CRM, performance, CX, design and social around a commercial growth plan.",
     results: [
       "£770k revenue, 110% of target",
       "6% cross-product conversion, 150% of target",
+      "18% higher ARPU than casino-only players and 25% increase in LTV",
     ],
   },
   {
