@@ -4,22 +4,47 @@ import { useState, type FormEvent } from "react";
 
 const LINKEDIN_URL = "https://www.linkedin.com/in/john-annoh/";
 const EMAIL = "j_annoh@hotmail.com";
+const WEB3FORMS_ACCESS_KEY = "657dfa30-c3a0-4299-b9c7-5cc7834297cf";
+
+type Status = "idle" | "submitting" | "success" | "error";
 
 export default function Contact() {
-  const [submitted, setSubmitted] = useState(false);
+  const [status, setStatus] = useState<Status>("idle");
 
-  function handleSubmit(event: FormEvent<HTMLFormElement>) {
+  async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    const formData = new FormData(event.currentTarget);
+    const form = event.currentTarget;
+    const formData = new FormData(form);
     const payload = {
+      access_key: WEB3FORMS_ACCESS_KEY,
+      subject: "New message from johnannoh.com",
       name: formData.get("name"),
       email: formData.get("email"),
       message: formData.get("message"),
+      botcheck: formData.get("botcheck"),
     };
-    // No backend yet — log the submission for now.
-    console.log("Contact form submission:", payload);
-    setSubmitted(true);
-    event.currentTarget.reset();
+
+    setStatus("submitting");
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify(payload),
+      });
+
+      if (response.ok) {
+        setStatus("success");
+        form.reset();
+      } else {
+        setStatus("error");
+      }
+    } catch {
+      setStatus("error");
+    }
   }
 
   return (
@@ -58,6 +83,14 @@ export default function Contact() {
             className="rounded-2xl border border-ink/10 bg-cream p-7 sm:p-8"
           >
             <div className="grid grid-cols-1 gap-5">
+              <input
+                type="checkbox"
+                name="botcheck"
+                className="hidden"
+                style={{ display: "none" }}
+                tabIndex={-1}
+                autoComplete="off"
+              />
               <div>
                 <label
                   htmlFor="name"
@@ -105,14 +138,25 @@ export default function Contact() {
               </div>
               <button
                 type="submit"
-                className="mt-2 w-full rounded-full bg-teal px-7 py-3.5 font-display text-sm font-semibold text-cream shadow-sm transition hover:bg-teal-dark sm:w-auto"
+                disabled={status === "submitting"}
+                className="mt-2 w-full rounded-full bg-teal px-7 py-3.5 font-display text-sm font-semibold text-cream shadow-sm transition hover:bg-teal-dark disabled:opacity-60 sm:w-auto"
               >
-                Send message
+                {status === "submitting" ? "Sending…" : "Send message"}
               </button>
-              {submitted && (
+              {status === "success" && (
                 <p className="text-sm text-teal">
-                  Thanks — your message has been logged. I&rsquo;ll get back
-                  to you soon.
+                  Thanks — your message is on its way. I&rsquo;ll get back to
+                  you soon.
+                </p>
+              )}
+              {status === "error" && (
+                <p className="text-sm text-red-600">
+                  Something went wrong sending that — please try again, or
+                  email me directly at{" "}
+                  <a href={`mailto:${EMAIL}`} className="underline">
+                    {EMAIL}
+                  </a>
+                  .
                 </p>
               )}
             </div>
