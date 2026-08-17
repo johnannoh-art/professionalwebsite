@@ -145,8 +145,8 @@ export default function Contact() {
               </button>
               {status === "success" && (
                 <p className="text-sm text-teal">
-                  Thanks — your message is on its way. I&rsquo;ll get back to
-                  you soon.
+                  Thanks for getting in touch. I&rsquo;ve got your message and
+                  I&rsquo;ll be in touch soon.
                 </p>
               )}
               {status === "error" && (
