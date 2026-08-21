@@ -9,9 +9,11 @@ export default function Hero() {
             Head of Brand &amp; Marketing · London
           </p>
           <h1 className="mt-5 font-display text-4xl font-extrabold leading-[1.08] tracking-tight text-ink sm:text-5xl lg:text-[3.25rem]">
-            I create{" "}
-            <span className="underline-gold">customer-led brands</span> that
-            drive commercial growth.
+            I bring{" "}
+            <span className="underline-gold">
+              customer, brand and commercial thinking
+            </span>{" "}
+            together to drive growth.
           </h1>
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-ink/75">
             Brand and marketing leader with a track record of launching,
